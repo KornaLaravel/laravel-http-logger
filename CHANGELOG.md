@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-http-logger` will be documented in this file.
 
+## 1.12.0 - 2026-07-14
+
+### What's Changed
+
+* Add support for the [QUERY HTTP method](https://laravel-news.com/laravel-13-19-0). QUERY requests carry their parameters in the request body like `POST`, so `LogNonGetRequests` now logs them alongside `POST`, `PUT`, `PATCH`, and `DELETE`. Thanks @eleftrik for the suggestion in #70.
+* Moved dev tooling to Pest 4. As a result, support for PHP < 8.3 and Laravel < 12 has been dropped.
+
+**Full Changelog**: https://github.com/spatie/laravel-http-logger/compare/1.11.2...1.12.0
+
 ## 1.11.2 - 2026-02-21
 
 Add Laravel 13 support
